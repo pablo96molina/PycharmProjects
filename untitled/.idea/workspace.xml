@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="" />
+    <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Diario/Diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Diario/Diary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,7 @@
   </component>
   <component name="ProjectId" id="1PssxFeCkZfikSWEf3fblI08TP7" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="E:/Git/git-cmd.exe" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -177,7 +181,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
