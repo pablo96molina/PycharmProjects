@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Diario/Diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Diario/Diary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/base_layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/suma.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/suma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -25,6 +30,7 @@
   <component name="ProjectId" id="1PssxFeCkZfikSWEf3fblI08TP7" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="F:/Git/cmd/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -47,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.peewee">
+  <component name="RunManager" selected="Python.Templates_con_Flask">
     <configuration name="Calculadora" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,27 +67,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/Calculadora.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Ciclos" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/Ciclos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,6 +117,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Templates_con_Flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProgOrientadaObjetos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="peewee" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Templates_con_Flask" />
         <item itemvalue="Python.peewee" />
         <item itemvalue="Python.Reto archivos" />
         <item itemvalue="Python.Lista de compras" />
         <item itemvalue="Python.Calculadora" />
-        <item itemvalue="Python.Ciclos" />
       </list>
     </recent_temporary>
   </component>

@@ -5,7 +5,8 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/<nombre>")
 def hola_mundo(nombre="invitado"):
-    return "Hola {}".format(nombre)
+    contexto = {'nombre': nombre}
+    return render_template("index.html", **contexto)
 
 @app.route("/suma/<int:num1>/<int:num2>")
 @app.route("/suma/<float:num1>/<int:num2>")
