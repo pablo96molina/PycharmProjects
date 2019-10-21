@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+{% block titulo %} Contacto {% endblock %}
+
+#El URL enviar dice que al presionar Submit nos enviará al def de enviar
+
+{% block contenido %}
+<form action="{{ url_for('enviar') }}" method="post">
+    <label for="nombre">Nombre</label> <input type="text" name="Nombre" value=""> <br>
+    <label for="nombre">Email</label> <input type="text" name="Email" value=""> <br>
+    <label for="nombre">Comentario</label> <input type="text" name="Comentario" value=""> <br>
+    <input type="submit" value="Submit">
+</form>
+    {% endblock %}

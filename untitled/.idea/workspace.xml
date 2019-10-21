@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/base_layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/contacto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/base_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/base_layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/suma.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/templates/suma.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

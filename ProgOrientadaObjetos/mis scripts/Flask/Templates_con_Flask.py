@@ -1,5 +1,5 @@
-from flask import Flask
-from flask import render_template
+import json
+from flask import Flask ,render_template , redirect,request, url_for
 app = Flask(__name__)
 
 @app.route("/")
@@ -18,5 +18,15 @@ def suma(num1=0, num2=0):
     #Enumeras lo que tenes que pasar al html dentro de contexto
     #return render_template("suma.html",num1 = num1, num2 = num2) le lleva los valores al html
     return render_template("suma.html", **contexto)
+@app.route("/contacto/")
+def contacto():
+    return render_template("contacto.html")
+
+@app.route("/enviar/", methods=['POST'])
+def enviar():
+    response = redirect(url_for('hola_mundo'));
+    response.set_cookie(json.dumps(dict(request.form.items())));
+    return response
+
 if __name__ == '__main__':
     app.run(debug=True)
