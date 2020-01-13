@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_Lineal_Simple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_No_Lineal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Arbol_Decision.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +53,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Regresion_No_Lineal">
+  <component name="RunManager" selected="Python.Arbol_Decision">
+    <configuration name="Arbol_Decision" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProgOrientadaObjetos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Arbol_Decision.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="K_vecinos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProgOrientadaObjetos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Regresion Lineal Simple" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,55 +159,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Templates_con_Flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ProgOrientadaObjetos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Flask/Templates_con_Flask.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="peewee" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/peewee.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Arbol_Decision" />
+        <item itemvalue="Python.K_vecinos" />
         <item itemvalue="Python.Regresion_No_Lineal" />
         <item itemvalue="Python.Regresion_Lineal_Simple" />
         <item itemvalue="Python.Regresion Lineal Simple" />
-        <item itemvalue="Python.Templates_con_Flask" />
-        <item itemvalue="Python.peewee" />
       </list>
     </recent_temporary>
   </component>
