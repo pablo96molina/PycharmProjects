@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Arbol_Decision.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_medias_clustering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_logistica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/SVM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Segmentacion_clientes_kmedias.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +55,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Arbol_Decision">
-    <configuration name="Arbol_Decision" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Clustering_Jerarquico">
+    <configuration name="Clustering_Jerarquico" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Arbol_Decision.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="K_vecinos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="K_medias_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,7 +89,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_vecinos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_medias_clustering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regresion Lineal Simple" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Regresion_logistica" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\59899\PycharmProjects\ProgOrientadaObjetos\mis scripts\Machine Learning\Regresion_Lineal_Simple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_logistica.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regresion_Lineal_Simple" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_Lineal_Simple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/SVM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regresion_No_Lineal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Segmentacion_clientes_kmedias" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,7 +152,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_No_Lineal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Segmentacion_clientes_kmedias.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Arbol_Decision" />
-        <item itemvalue="Python.K_vecinos" />
-        <item itemvalue="Python.Regresion_No_Lineal" />
-        <item itemvalue="Python.Regresion_Lineal_Simple" />
-        <item itemvalue="Python.Regresion Lineal Simple" />
+        <item itemvalue="Python.Clustering_Jerarquico" />
+        <item itemvalue="Python.Segmentacion_clientes_kmedias" />
+        <item itemvalue="Python.K_medias_clustering" />
+        <item itemvalue="Python.SVM" />
+        <item itemvalue="Python.Regresion_logistica" />
       </list>
     </recent_temporary>
   </component>
