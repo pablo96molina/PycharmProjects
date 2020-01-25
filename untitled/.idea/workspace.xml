@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_medias_clustering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_logistica.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/SVM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Segmentacion_clientes_kmedias.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico_datos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico_datosaleatorios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/DBScan_Ejemplo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="F:/Git/cmd/git.exe" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -55,7 +59,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Clustering_Jerarquico">
+  <component name="RunManager" selected="Python.DBScan_Ejemplo">
+    <configuration name="Cluster_DBSCAN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProgOrientadaObjetos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\59899\PycharmProjects\ProgOrientadaObjetos\mis scripts\Machine Learning\Cluster_DBSCAN_Generico.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Clustering_Jerarquico" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\59899\PycharmProjects\ProgOrientadaObjetos\mis scripts\Machine Learning\Clustering_Jerarquico_datosaleatorios.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="K_medias_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Clustering_Jerarquico_datos" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/K_medias_clustering.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico_datos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regresion_logistica" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DBScan_Ejemplo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,28 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Regresion_logistica.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ProgOrientadaObjetos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/SVM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/DBScan_Ejemplo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DBScan_Ejemplo" />
+        <item itemvalue="Python.Cluster_DBSCAN" />
+        <item itemvalue="Python.Clustering_Jerarquico_datos" />
         <item itemvalue="Python.Clustering_Jerarquico" />
         <item itemvalue="Python.Segmentacion_clientes_kmedias" />
-        <item itemvalue="Python.K_medias_clustering" />
-        <item itemvalue="Python.SVM" />
-        <item itemvalue="Python.Regresion_logistica" />
       </list>
     </recent_temporary>
   </component>
