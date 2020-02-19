@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico_datos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico_datosaleatorios.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/DBScan_Ejemplo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Clustering_Jerarquico.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProgOrientadaObjetos/Poll/mysite/polls/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,33 +29,27 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="F:/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProgOrientadaObjetos/Poll/mysite/mysite" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\59899\PycharmProjects\ProgOrientadaObjetos\Poll\mysite\mysite" />
       <recent name="C:\Users\59899\PycharmProjects\Diario" />
       <recent name="C:\Users\59899\PycharmProjects\untitled" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.DBScan_Ejemplo">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="Cluster_DBSCAN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Segmentacion_clientes_kmedias" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ProgOrientadaObjetos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProgOrientadaObjetos/Poll/mysite" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/mis scripts/Machine Learning/Segmentacion_clientes_kmedias.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ProgOrientadaObjetos/Poll/mysite/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.manage" />
         <item itemvalue="Python.DBScan_Ejemplo" />
         <item itemvalue="Python.Cluster_DBSCAN" />
         <item itemvalue="Python.Clustering_Jerarquico_datos" />
         <item itemvalue="Python.Clustering_Jerarquico" />
-        <item itemvalue="Python.Segmentacion_clientes_kmedias" />
       </list>
     </recent_temporary>
   </component>
@@ -200,5 +190,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="399" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582079759758">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="399" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1582079759758" />
+    <state width="1259" height="186" key="GridCell.Tab.0.bottom" timestamp="1582079672362">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1259" height="186" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1582079672362" />
+    <state width="1259" height="186" key="GridCell.Tab.0.center" timestamp="1582079672346">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1259" height="186" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1582079672346" />
+    <state width="1259" height="186" key="GridCell.Tab.0.left" timestamp="1582079672346">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1259" height="186" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1582079672346" />
+    <state width="1259" height="186" key="GridCell.Tab.0.right" timestamp="1582079672346">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1259" height="186" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1582079672346" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1582079148336">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.760@0.0.1280.760" timestamp="1582079148336" />
+    <state x="336" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1582072161526">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="336" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1582072161526" />
   </component>
 </project>
