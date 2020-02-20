@@ -4,7 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="" />
+    <list default="true" id="aa7307c6-20fb-493e-853b-5a0426fd6f91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +37,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProgOrientadaObjetos/Poll/mysite/mysite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysite" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -193,6 +195,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="399" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1582079759758" />
+    <state x="420" y="136" key="FileChooserDialogImpl" timestamp="1582083246604">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="420" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1582083246604" />
     <state width="1259" height="186" key="GridCell.Tab.0.bottom" timestamp="1582083026589">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -213,9 +219,9 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1280.760@0.0.1280.760" timestamp="1582079148336" />
-    <state x="336" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1582072161526">
+    <state x="336" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1582083116341">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="336" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1582072161526" />
+    <state x="336" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1582083116341" />
   </component>
 </project>
