@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import logout as auth_logout
 
 from home.forms import SignUpForm
 
@@ -21,3 +22,7 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request, 'home/signup.html', {'form': form})
+
+def logout(request):
+    auth_logout(request)
+    return redirect('home')
