@@ -8,7 +8,6 @@ from django.views import generic
 # Prueba de respuesta de votacion
 #def vote(request, question_id):
 #    return HttpResponse("You're voting on question %s." % question_id)
-
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
@@ -21,6 +20,9 @@ def vote(request, question_id):
         })
     else:
         selected_choice.votes += 1
+        selected_choice.Saldo += question.ValorMarket
+        # Lo que hace esto es sumarle el valor del market a la columna de la respuesta, pero precisamos la forma de tener
+        # un saldo que sea unico, probar una variable que se sume con ValorMarket o algo así
         selected_choice.save()
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 

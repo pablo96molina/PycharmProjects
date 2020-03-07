@@ -9,7 +9,8 @@ from django.db import models
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('Fecha publicación')
-    # ValorMarket = models.IntegerField('Monedas')
+    ValorMarket = models.IntegerField('Monedas')
+    #Ver como hacer que se cree la columna por base de datos, lo hice usando el DBLite
     def __str__(self):
         return self.question_text
 
@@ -21,5 +22,6 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    Saldo = models.IntegerField('Monedas')
     def __str__(self):
         return self.choice_text
