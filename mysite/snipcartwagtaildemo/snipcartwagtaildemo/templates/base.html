@@ -28,13 +28,37 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+<div class="container grid-lg">
+    <header class="navbar">
 
-        {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/snipcartwagtaildemo.js' %}"></script>
+        <section class="navbar-section">
+            <a href="/" class="navbar-brand mr-2">
+                Products
+            </a>
+        </section>
 
-        {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
-        {% endblock %}
+        <!-- Snipcart summary and View cart button -->
+        <section class="navbar-section snipcart-summary">
+            <div class="input-group input-line">
+                <a href="" class="btn btn-primary snipcart-checkout">
+                    <i class="icon icon-apps"></i>
+                    View cart (<span class="snipcart-total-items">0</span>)
+                </a>
+            </div>
+        </section>
+
+    </header>
+</div>
+
+<div class="container grid-lg">
+    {% block content %}{% endblock %}
+</div>
+
+{# Global javascript #}
+<script type="text/javascript" src="{% static 'js/snipcartwagtaildemo.js' %}"></script>
+
+{% block extra_js %}
+    {# Override this in templates to add extra javascript #}
+{% endblock %}
     </body>
 </html>
