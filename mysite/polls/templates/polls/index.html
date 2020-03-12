@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
+{% if request.user.is_authenticated %}
+    {% if latest_question_list %}
+        <ul>
+        {% for question in latest_question_list %}
+            <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
 {% else %}
-    <p>No polls are available.</p>
+        <h2>Error: Para responder encuestas debe iniciar sesion.</h2>
 {% endif %}
