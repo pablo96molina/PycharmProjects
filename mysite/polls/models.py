@@ -5,8 +5,10 @@ from django.db import models
 from django.utils import timezone
 from django.db import models
 
+from django.contrib.auth.models import User
 
 class Question(models.Model):
+    completed_by = models.ManyToManyField(User, null=True, blank=True)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('Fecha publicación')
     ValorMarket = models.IntegerField('Monedas')

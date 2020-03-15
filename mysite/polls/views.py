@@ -24,6 +24,11 @@ def vote(request, question_id):
         # Lo que hace esto es sumarle el valor del market a la columna de la respuesta, pero precisamos la forma de tener
         # un saldo que sea unico, probar una variable que se sume con ValorMarket o algo así
         selected_choice.save()
+
+         # Lo que hace esto es registrar que la pregunta elegida fue completada por el usuario logueado
+        question.completed_by.add(request.user)
+        question.save()
+
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 class IndexView(generic.ListView):
@@ -33,6 +38,10 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         """Return the last five published questions."""
         return Question.objects.order_by('-pub_date')[:5]
+        enabled_questions = Question.objects.exclude(completed_by__pk=self.request.user.pk).order_by('-pub_date')[:5]
+        disabled_questions = Question.objects.filter(completed_by__pk=self.request.user.pk).order_by('-pub_date')[:5]
+
+        return {'enabled_questions': enabled_questions, 'disabled_questions': disabled_questions}
 
 
 class DetailView(generic.DetailView):
