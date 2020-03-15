@@ -36,8 +36,6 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_question_list'
     #Modelo generico sacado del tutorial de Django
     def get_queryset(self):
-        """Return the last five published questions."""
-        return Question.objects.order_by('-pub_date')[:5]
         enabled_questions = Question.objects.exclude(completed_by__pk=self.request.user.pk).order_by('-pub_date')[:5]
         disabled_questions = Question.objects.filter(completed_by__pk=self.request.user.pk).order_by('-pub_date')[:5]
 
