@@ -8,9 +8,11 @@
     {% endfor %}
     </ul>
 
-    <a href="{% url 'polls:detail' question.id %}">¿Votar de nuevo?</a>
 {% else %}
     <h2>Error: Para responder encuestas debe iniciar sesion.</h2>
 {% endif %}
+
+<p>Felicitaciones, has ganado {{ question.ValorMarket }} monedas.</p>
+<p>En total tienes {{ valor_market_balance }} monedas para canjear por premios en nuestra tienda.</p>
 
 <a href="{% url 'polls:index' %}">¿Votar de nuevo?</a>
