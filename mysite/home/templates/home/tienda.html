@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tienda Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style >
+
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+
+        .generalContainer {
+             width: 90%;
+             max-width: 1000px;
+             margin: auto;
+
+             /*Flex*/
+             display: flex;
+             flex-flow: row wrap;
+        }
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+          background-color: #000000;
+          width: 100%;
+          padding: 20px;
+          font-size: 40px;
+          color: white;
+
+          /*Flex*/
+          display: flex;
+          align-items: center;
+
+          flex-flow: row wrap;
+        }
+
+        h1 {
+            letter-spacing: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+
+
+
+        /* Style the navigation menu */
+        nav {
+          background: #f44336;
+          width: 100%;
+          height: 20px;
+          padding: 0;
+          border: 2px;
+
+          /*Flex*/
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+
+        }
+
+
+        nav .selection {
+            color: color: #ffffff;
+            text-align: end;
+            text-decoration: none;
+
+            /*Flex*/
+            flex-grow: 1;
+        }
+
+        .selection:hover {
+            background: #ccc;
+            color: #000;
+            width: 45px;
+            height: 20px;
+
+        }
+        /* Style the list inside the menu */
+        /*nav ul {
+          list-style-type: none;
+          padding: 0;*/
+        }
+
+        /* Container for flexboxes */
+
+        }
+
+        section {
+          width: 100%;
+          height: 800px;
+          padding: 0;
+
+          /*Flex*/
+          display: flex;
+          flex-flow: row wrap;
+
+        }
+
+        /* Style the content */
+        section .generalContainer2 {
+          width: 100%;
+          height: 800px;
+          /*margin-left: auto;*/
+          background-color: #ffffff;
+          padding: 0;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+      }
+          section .winterImage {
+             background-color: none;
+             /*position: absolute;*/
+             top: 8px;
+             left: 16px;
+             /*display: inline-block;*/
+
+             /*Flex*/
+             /*display: flex;
+             flex-flow: column rap;*/
+
+        }
+
+        section .imagenTemporada {
+            position: relative;
+            text-align: center;
+            color: #b4c0c3;
+            display: inline-block;
+        }
+
+
+        generalContainer2 .articles{
+            display: inline-block;
+            /*display: flex;
+            flex-flow: column nowrap;
+            align-content: space-around;*/
+        }
+
+
+
+
+
+        /* Style the footer */
+        footer {
+          width: 100%;
+          height: 70px;
+          padding: 0;
+          color: white;
+          color: #000;
+          background-color: #f1f1f1;
+
+          /*Flex*/
+
+          display: flex;
+          flex-flow: column wrap;
+        }
+
+        footer .contacto {
+            background-color: #f1f1f1;
+
+            /*Flex*/
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+
+        footer .acercaDe{
+            background-color: #f1f1f1;
+
+            /*Flex*/
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+
+        footer acercaDe .widgets{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .newsletter {
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          section {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+          }
+        }
+        .w3-sidebar a {font-family: "Roboto", sans-serif}
+        body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+
+        </style>
+    </head>
+    <body>
+    <div class="generalContainer">
+        <header class="w3-black logo">
+            <div class="logo">
+                <h1 style="text-align: center"><p><img src="img/logo_devuy.png" style="width: 150px" alt="Logo">
+                         ¡Bienvenidos!
+              <!--{% if latest_question_list.enabled_questions %}-->
+                    </p></<h1>
+            </div>
+
+        </header>
+
+         <section class="articles-Container">
+              <div class="generalContainer2">
+                  <div class="imagenTemporada ">
+                      <div class="element1">NUEVA COLLECCIÓN</div>
+                      <div class="element2">Invierno 2020</div<h1>
+                      <img src="img/invierno.jpg" alt="" width="750px" height="400px">
+                  </div>
+                  <div class="articles">
+                      <div class="ropa2">
+                          <img src="img/ropa2.jpg" alt="Ropa2"width="150px">
+                      </div>
+                      <div class="jean">
+                          <img src="img/ropa3.jpg" alt="Jean" widht:"100px" height="150px">
+                      </div>
+                  </div>
+
+              </div>
+
+          </section>
+
+          <!--Barra de Navegación-->
+            <nav>
+                <div class="selection">
+                    <div class="link" style="font-weight:bold">
+                        <!--ul>
+                        {% for question in latest_question_list.enabled_questions %}
+                            <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if latest_question_list.disabled_questions %}-->
+                        <a href="#">Preguntas Votadas</a>
+                        <!--ul>
+                        {% for question in latest_question_list.disabled_questions %}
+                            <li>{{ question.question_text }}</li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if not latest_question_list.enabled_questions and not latest_question_list.disabled_questions %}
+                            <p>No polls are available.</p>
+                        {% endif %}-->
+                      <a href="#">Home</a>
+                      <!--a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn"-->
+                  </div>
+                </div>
+
+            </nav>
+         <footer class="" id="footer">
+         <div class="footer">
+               <div class="contacto">
+                 <h4>Contacto</h4>
+                  <p>¿Preguntas o Sugerencias?</p>
+                  <form action="/action_page.php" target="_blank">
+                  <p><input class="" type="text" placeholder="Nombre" name="Name" required></p>
+                  <p><input class="" type="text" placeholder="Email" name="Email" required></p>
+                  <p><input class="" type="text" placeholder="Asunto" name="Subject" required></p>
+                  <p><input class="" type="text" placeholder="Mensaje" name="Message" required></p>
+                  <button type="submit" class="w3-button w3-black">Enviar</button>
+                </form>
+              </div>
+
+             <div class="acercaDe">
+                <h4>Acerca de</h4>
+                <p><a href="#">Acerca de Nosotros</a></p>
+                <p><a href="#">Novedades</a></p>
+                <p><a href="#">Promociones</a></p>
+                <p><a href="#">Ayuda</a></p>
+                <h4>La Empresa</h4>
+                <p><i class="fa fa-fw fa-map-marker"></i> Ubicación</p>
+                <p><i class="fa fa-fw fa-phone"></i> 0000123123</p>
+                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                <br>
+                <div class="widgets">
+                    <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>                  <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+
+                </div>
+              </div>
+            <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a--></div>
+
+              <!--div class="">
+                <div class="">
+                  <!i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i-->
+                  <!--button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+                </div>
+               </div-->
+            </div>
+         </div>
+
+        </footer>
+
+  <!-- Newsletter Modal -->
+
+
+      <script>
+      // Accordion
+      function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // Click on the "Jeans" link on page load to open the accordion for demo purposes
+      document.getElementById("myBtn").click();
+
+
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
+
+
+    </div>
+
+</body>
+</html>
