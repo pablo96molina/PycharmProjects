@@ -29,16 +29,17 @@
         <h3 class="w3-wide"><b>Mi Tienda</b></h3>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="{% url 'home' %}" class="w3-bar-item w3-button">Home</a>
         <a href="#" class="w3-bar-item w3-button">Tienda</a>
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
           Perfil <i class="fa fa-caret-down"></i>
         </a>
      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
          <a href="#" class="w3-bar-item w3-button w3-light-grey"><img src="img/Icono_perfil.png" class="fa fa-caret-right w3-margin-right" style="width: 100%"></a>
-         <a href="#" class="w3-bar-item w3-button">Nombre de Usuario</a>
-         <a href="#" class="w3-bar-item w3-button">Créditos: 0</a>
-         <a href="#" class="w3-bar-item w3-button">Encuestas Respondidas:0</a>
+         <a href="#" class="w3-bar-item w3-button">{{ user.username }}</a>
+         <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
+         <!-- <a href="#" class="w3-bar-item w3-button">Créditos: </a>
+         <a href="#" class="w3-bar-item w3-button">Encuestas Respondidas:0</a> -->
      </div>
         <a href="#" class="w3-bar-item w3-button"></a>
         <a href="#" class="w3-bar-item w3-button"></a>
@@ -158,8 +159,8 @@
       <div class="w3-container w3-black w3-padding-32">
         <h1>Danos tu opinión</h1>
         <p>Para ganar créditos y obtener muchos premios</p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Lista de Encuestas" style="width:100%"></p>
-        <button type="button" class="w3-button w3-red w3-margin-bottom">ENCUESTAME</button>
+        <!-- <p><input class="w3-input w3-border" type="text" placeholder="Lista de Encuestas" style="width:100%"></p> -->
+        <a type="button" role="button" href="/polls" class="w3-button w3-red w3-margin-bottom">ENCUESTAME</a>
       </div>
 
   <!-- Footer -->
