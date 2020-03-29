@@ -1,0 +1,193 @@
+.generalContainer {
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+
+     /*Flex*/
+     display: flex;
+     flex-flow: row wrap;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  font-size: 40px;
+  color: #706f6f;
+
+  /*Flex*/
+  display: flex;
+  align-items: center;
+
+  flex-flow: row wrap;
+}
+
+    li a {
+        font-size: 20px;
+        text-decoration: none;
+        color:;
+
+    }
+
+         /* Style the navigation menu */
+
+    nav {
+        background: #f44336;
+        width: 100%;
+        margin: 0;
+
+
+    }
+
+
+     ul, ol {
+         list-style: none;
+     }
+
+
+     nav> ul> li {
+         float: left;
+
+     }
+
+     nav> ul {
+         display: table;
+         overflow: hidden;
+         width: 100%;
+         position: relative;
+
+     }
+
+     nav> ul>li {
+         display: table-cell;
+     }
+
+      nav li a {
+         background: #f44336;
+         color: white;
+         text-decoration: none;
+         align-items: flex-end;
+     }
+
+     nav> ul> li> ul {
+         display: none;
+     }
+
+     nav> ul> li a {
+         display: block;
+         line-height: 20px;
+         text-align: center;
+         padding: 20px;
+         position: relative;
+
+     }
+
+    nav> ul> li:hover> ul {
+         display: block;
+         height: 100%;
+    }
+
+     nav li a:hover {
+         background-color: #ee827a;
+         color: #2a2726;
+     }
+
+
+
+      /* Style the footer */
+      footer {
+           width: 100%;
+           padding: 0;
+           color: #000;
+           background-color: #f1f1f1;
+
+            /*Flex*/
+
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: space-around;
+       }
+
+/* Style the navigation menu */
+
+nav {
+   background: #f44336;
+   width: 100%;
+
+
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+nav> ul> li {
+    float: left;
+
+}
+
+nav> ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+}
+
+nav> ul>li {
+    display: table-cell;
+}
+
+ nav li a {
+    background: #f44336;
+    color: white;
+    text-decoration: none;
+    align-items: flex-end;
+}
+
+nav> ul> li> ul {
+    display: none;
+}
+
+nav> ul> li a {
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+nav> ul> li:hover> ul {
+    display: block;
+    height: 100%;
+}
+
+nav li a:hover {
+    background-color: #ee827a;
+    color: #2a2726;
+}
+
+
+
+ /* Style the footer */
+ footer {
+      width: 100%;
+      padding: 0;
+      color: #000;
+      background-color: #f1f1f1;
+
+       /*Flex*/
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+  }

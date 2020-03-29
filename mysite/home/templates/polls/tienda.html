@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tienda Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style >
+
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+
+        section .generalContainer2 {
+           width: 1000px;
+           height: 400px;
+           background-image: url("img/invierno.png");
+           padding: 0;
+
+           /*Flex*/
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content: space-between;
+         }
+        </style>
+    </head>
+    <body>
+    <div class="generalContainer">
+        <header class="w3-black logo">
+            <div class="logo">
+                <h1 style="text-align: center"><p><img src="img/logo_devuy.png" style="width: 150px" alt="Logo">
+                         ¡Bienvenidos!
+                    </p></<h1>
+            </div>
+
+        </header>
+
+         <section class="articles-Container">
+              <div class="generalContainer2">
+                  <div class="newCollection ">
+                      <div class="element1">NUEVA COLLECCIÓN</div>
+                      <div class="element2">Invierno 2020</div>
+
+                  </div>
+                  <div class="articles">
+                      <div class="ropa2">
+                          <img src="img/ropa2.jpg" alt="Ropa2"width="150px">
+                      </div>
+                      <div class="jean">
+                          <img src="img/ropa3.jpg" alt="Jean" widht:"100px" height="150px">
+                      </div>
+                  </div>
+
+              </div>
+
+          </section>
+
+          <!--Barra de Navegación-->
+            <nav>
+                <ul>
+                    <li><a href="#">Preguntas Votadas</a>
+                        <ul>
+                            <li><a href="#" class="question1">Pregunta 1</a></li>
+                            <li><a href="#" class="question2">Pregunta 2</a></li>
+                            <li><a href="#" class="question3">Pregunta 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Dev-uy.html">Mi Tienda</a></li>
+                </ul>
+                 <!--ul>
+                <{% if latest_question_list.enabled_questions %}>
+                {% for question in latest_question_list.enabled_questions %}
+                    <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                {% if latest_question_list.disabled_questions %}-->
+                <!--ul>
+                {% for question in latest_question_list.disabled_questions %}
+                    <li>{{ question.question_text }}</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+                {% if not latest_question_list.enabled_questions and not latest_question_list.disabled_questions %}
+                    <p>No polls are available.</p>
+                {% endif %}-->
+                <!--a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn"-->
+            </nav>
+         <footer class="" id="footer">
+         <div class="contactSection">
+               <div class="contact">
+                 <h4>Contacto</h4><br>
+                  <p>¿Preguntas o Sugerencias?</p>
+                  <form action="/action_page.php" target="_blank">
+                  <p><input class="" type="text" placeholder="Nombre" name="Name" required></p>
+                  <p><input class="" type="text" placeholder="Email" name="Email" required></p>
+                  <p><input class="" type="text" placeholder="Asunto" name="Subject" required></p>
+                  <p><input class="" type="text" placeholder="Mensaje" name="Message" required></p>
+                  <button type="submit" class="w3-button w3-black">Enviar</button>
+                  </form>
+               </div>
+               <div class="about">
+                     <h4>Acerca de</h4>
+                     <p><a href="#">Acerca de Nosotros</a></p>
+                     <p><a href="#">Novedades</a></p>
+                     <p><a href="#">Promociones</a></p>
+                     <p><a href="#">Ayuda</a></p>
+                </div>
+                <div class="company">
+                     <h4>La Empresa</h4>
+                     <p><i class="fa fa-fw fa-map-marker"></i> Ubicación</p>
+                     <p><i class="fa fa-fw fa-phone"></i> 0000123123</p>
+                     <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                     <br>
+                    <div class="widgets">
+                         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>                  <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                         <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+                         <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+                         <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                         <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+
+                    </div>
+                 </div>
+
+            </div>
+            <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a--></div>
+
+              <!--div class="">
+                <div class="">
+                  <!i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i-->
+                  <!--button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+                </div>
+               </div-->
+        </div>
+    </footer>
+
+  <!-- Newsletter Modal -->
+
+
+      <script>
+      // Accordion
+      function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // Click on the "Jeans" link on page load to open the accordion for demo purposes
+      document.getElementById("myBtn").click();
+
+
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
+
+
+    </div>
+
+</body>
+</html>

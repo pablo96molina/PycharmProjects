@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <title>Tienda Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style >
+
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="nav">
+                  <li>
+                    <a href="home.html">Iniciar Sesión</a>
+                  </li>
+                  <li>
+                    <a href="tienda.html">La Tienda</a>
+                    <ul>
+                        <li><a href="Dev-uy.html">Mi Tienda</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Contacto</a>
+                  </li>
+                </ul>
+            <nav>
+        </header>
+        {% if request.user.is_authenticated %}
+            <h1>{{ question.question_text }}</h1>
+
+            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+            <form action="{% url 'polls:vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+                <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            {% endfor %}
+            <input type="submit" value="Votar">
+            </form>
+        {% else %}
+            <h2>Error: Para responder encuestas debe iniciar sesion.</h2>
+        {% endif %}
+
+    </body>
+    <footer>
+        <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a--></div>
+    </footer>
+</html>

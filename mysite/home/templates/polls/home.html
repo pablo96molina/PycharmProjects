@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+    <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    </style>
+    <body class="w3-content" style="max-width:1200px">
+   <body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+      <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <img src="img/logo_devuy.png" alt="Dev.uy Logo" style="width:100%">
+      </div>
+      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+        <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+        <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+        <a href="#" class="w3-bar-item w3-button">Straight</a>
+      </div>
+        <a href="#" class="w3-bar-item w3-button">Jackets</a>
+        <a href="#" class="w3-bar-item w3-button">Gymwear</a>
+        <a href="#" class="w3-bar-item w3-button">Blazers</a>
+        <a href="#" class="w3-bar-item w3-button">Shoes</a>
+      </div>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+        <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+    </nav>
+
+<!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    <!-- Top header -->
+      <header class="w3-container w3-xlarge">
+         <div class="container-fluid">
+              <div class="col-9">
+                  <div class="col-7 py-4">
+                          <div class="w3-right">
+                            <h4>Si ya tienes un usuario inicia sesion</h4>
+                          </div>
+                  </div>
+               </div>
+        </div><br>
+        <p class="w3-right">
+          <!--i class="fa fa-shopping-cart w3-margin-right"></i>
+          <i class="fa fa-search"></i-->
+        </p>
+    </header>
+
+      <!-- Image header -->
+      <!---div class="w3-display-container w3-container">
+        <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+          <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+          <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+          <h1 class="w3-hide-small">COLLECTION 2016</h1>
+          <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-text-grey" id="jeans">
+        <p>8 items</p>
+    </div-->
+
+      <!-- Product grid -->
+      <!--div class="w3-row w3-grayscale">
+        <div class="w3-col l3 s6">
+          <div class="w3-container">
+            <img src="/w3images/jeans1.jpg" style="width:100%">
+            <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+          </div>
+          <div class="w3-container">
+            <img src="/w3images/jeans2.jpg" style="width:100%">
+            <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+          <div class="w3-container">
+            <div class="w3-display-container">
+              <img src="/w3images/jeans2.jpg" style="width:100%">
+              <span class="w3-tag w3-display-topleft">New</span>
+              <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+          </div>
+          <div class="w3-container">
+            <img src="/w3images/jeans3.jpg" style="width:100%">
+            <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+          </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+          <div class="w3-container">
+            <img src="/w3images/jeans3.jpg" style="width:100%">
+            <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+          </div>
+          <div class="w3-container">
+            <div class="w3-display-container">
+              <img src="/w3images/jeans4.jpg" style="width:100%">
+              <span class="w3-tag w3-display-topleft">Sale</span>
+              <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+          </div>
+      </div-->
+
+    <div class="jumbotron">
+        <h1 class="display-4">¡Realiza encuestas!</h1>
+        <p class="lead">Participa y gana muchos premios.</p>
+        <hr class="my-4">
+        <p>Comienza hoy.</p>
+        {% if user.is_authenticated %}
+        <a class="btn btn-primary btn-lg" href="" role="button">Contestar encuestas</a>
+
+        {% else %}
+        <a class="btn btn-primary btn-lg" href="/signup" role="button">Registrarse</a>
+
+        {% endif %}
+    </div>
+
+    {% if not user.is_authenticated %}
+
+
+
+                {% block content %}
+                  <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Login</button>
+                  </form>
+                {% endblock %}
+
+                <!-- <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                  </form> -->
+
+
+
+    {% endif %}
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
