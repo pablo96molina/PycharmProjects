@@ -1,4 +1,7 @@
 <!doctype html>
+
+{% load static %}
+
 <html lang="es">
   <head>
     <title>Proyecto Dev.uy Template</title>
@@ -25,7 +28,7 @@
     <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
       <div class="w3-container w3-display-container w3-padding-16">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-        <img src="img/logo_devuy.png" alt="Dev.uy Logo" style="width:100%">
+        <img src='{% static "mysite/img/logo_devuy.png" %}' alt="Dev.uy Logo" style="width:100%">
         <h3 class="w3-wide"><b>Mi Tienda</b></h3>
       </div>
       <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
@@ -35,16 +38,16 @@
           Perfil <i class="fa fa-caret-down"></i>
         </a>
      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-         <a href="#" class="w3-bar-item w3-button w3-light-grey"><img src="img/Icono_perfil.png" class="fa fa-caret-right w3-margin-right" style="width: 100%"></a>
+         <a href="#" class="w3-bar-item w3-button w3-light-grey"><img src='{% static "mysite/img/Icono_perfil.png" %}' class="fa fa-caret-right w3-margin-right" style="width: 100%"></a>
          <a href="#" class="w3-bar-item w3-button">{{ user.username }}</a>
          <a href="{% url 'logout' %}" class="w3-bar-item w3-button">Logout</a>
          <!-- <a href="#" class="w3-bar-item w3-button">Créditos: </a>
          <a href="#" class="w3-bar-item w3-button">Encuestas Respondidas:0</a> -->
      </div>
+        <!-- <a href="#" class="w3-bar-item w3-button"></a>
         <a href="#" class="w3-bar-item w3-button"></a>
         <a href="#" class="w3-bar-item w3-button"></a>
-        <a href="#" class="w3-bar-item w3-button"></a>
-        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a> -->
      </div>
   <!-- Footer opcional para más información sobre los usuarios <a href="#footer" class="w3-bar-item w3-button w3-padding"></a>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Otros aspectos de interés sobre los usuarios</a>
@@ -79,6 +82,7 @@
 
   <!-- Image header -->
       <div class="w3-display-container w3-container">
+        <img src='{% static "mysite/img/invierno.jpg" %}' alt="Invierno" style="width:100%"> <!-- -->
         <!--img src="img/ropa3.jpg" alt="Jean" style="width:50%"-->
           <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
             <h1 class="w3-jumbo" style="color: black position: absolute">NUEVA COLECCIÓN</h1>
@@ -143,17 +147,17 @@
           </div>
         </div>
 
-        <div class="w3-col l3 s6">
+        <!-- <div class="w3-col l3 s6">
           <div class="w3-container">
-            <img src="img/ropa2.jpg" style="width:100%">
+            <img src='{% static "mysite/img/ropa2.jpg" %}' style="width:100%">
             <p>Artículo<br><b>Créditos</b></p>
           </div>
           <div class="w3-container">
-            <!--img src="/w3images/jeans1.jpg" style="width:100%"-->
+            img src="/w3images/jeans1.jpg" style="width:100%"
             <p>Artículo<br><b>Créditos</b></p>
           </div>
         </div>
-      </div>
+      </div> -->
 
   <!-- Subscribe section -->
       <div class="w3-container w3-black w3-padding-32">
