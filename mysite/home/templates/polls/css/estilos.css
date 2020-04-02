@@ -1,0 +1,232 @@
+.generalContainer {
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+
+     /*Flex*/
+     display: flex;
+     flex-flow: row wrap;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000;
+  width: 100%;
+  padding: 20px;
+  font-size: 40px;
+  color: #706f6f;
+
+  /*Flex*/
+  display: flex;
+  align-items: center;
+
+  flex-flow: row wrap;
+}
+
+header h1 {
+    letter-spacing: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+/* Container for flexboxes */
+
+section {
+  width: 1000px;
+  height: 400px;
+  padding: 0;
+
+  /*Flex*/
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+/* Style the content */
+section .generalContainer2 {
+   width: 1000px;
+   height: 400px;
+   background-image: url("img/invierno.png");
+   padding: 0;
+
+   /*Flex*/
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+ }
+  section .newCollection {
+
+
+     /*Flex*/
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-end;
+
+  }
+
+   section .element1{
+      font-size: xx-large;
+      color: #706f6f;
+   }
+
+  section .articles {
+
+        /*Flex*/
+       display: flex;
+       flex-flow: column wrap;
+       justify-content: flex-end;
+
+   }
+
+
+   /* Style the navigation menu */
+
+  nav {
+      background: #f44336;
+      width: 100%;
+
+
+  }
+
+
+   ul, ol {
+       list-style: none;
+   }
+
+
+   nav> ul> li {
+       float: left;
+
+   }
+
+   nav> ul {
+       display: table;
+       overflow: hidden;
+       width: 100%;
+       position: relative;
+
+   }
+
+   nav> ul>li {
+       display: table-cell;
+   }
+
+    nav li a {
+       background: #f44336;
+       color: white;
+       text-decoration: none;
+       align-items: flex-end;
+   }
+
+   nav> ul> li> ul {
+       display: none;
+   }
+
+   nav> ul> li a {
+       display: block;
+       line-height: 20px;
+       text-align: center;
+       padding: 20px;
+       position: relative;
+
+   }
+
+  nav> ul> li:hover> ul {
+       display: block;
+       height: 100%;
+  }
+
+   nav li a:hover {
+       background-color: #ee827a;
+       color: #2a2726;
+   }
+
+
+
+    /* Style the footer */
+    footer {
+         width: 100%;
+         padding: 0;
+         color: #000;
+         background-color: #f1f1f1;
+
+          /*Flex*/
+
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+     }
+
+    footer .contactSection {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    footer h4 {
+        padding: 16px;
+    }
+
+    footer .about a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+
+    footer p {
+        color: #000;
+    }
+    footer .contact {
+        background-color: #f1f1f1;
+        padding: 16px;
+
+        /*Flex*/
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    footer .about {
+        background-color: #f1f1f1;
+        padding: 16px;
+        /*Flex*/
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    footer .company {
+        padding: 16px;
+    }
+    footer acercaDe .widgets{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .newsletter {
+        background-color: #000000;
+        color: white;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
