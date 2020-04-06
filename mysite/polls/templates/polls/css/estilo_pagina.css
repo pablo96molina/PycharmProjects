@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: white;
+}
+
+.navegador {
+  background: green;
+}
+
+/*# sourceMappingURL=estilo_pagina.css.map */
