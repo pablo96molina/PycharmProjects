@@ -1,18 +1,70 @@
 <!DOCTYPE html>
-{% if request.user.is_authenticated %}
-    <h1>{{ question.question_text }}</h1>
+<html>
+<head>
+        <title>Resultados</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <ul>
-    {% for choice in question.choice_set.all %}
-        <li>{{ choice.choice_text }} -- {{choice.votes}} votos{{ hoice.votes|pluralize}}</li>
-    {% endfor %}
-    </ul>
+        <style >
 
-{% else %}
-    <h2>Error: Para responder encuestas debe iniciar sesion.</h2>
-{% endif %}
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="img/logo_devuy.png" alt="Logo">
+                <div class="links">
+                    <ul class="nav">
+                         <li>
+                            <a href="home.html">Iniciar Sesión</a>
+                         </li>
+                         <li>
+                            <a href="tienda.html">La Tienda</a>
+                             <ul>
+                                <li><a href="Dev-uy.html">Mi Tienda</a>
+                                </li>
+                             </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Contacto</a>
+                          </li>
+                    </ul>
+                </div>
+             </div>
+        <nav>
 
-<p>Felicitaciones, has ganado {{ question.ValorMarket }} monedas.</p>
-<p>En total tienes {{ valor_market_balance }} monedas para canjear por premios en nuestra tienda.</p>
+        
+        {% if request.user.is_authenticated %}
+            <h1>{{ question.question_text }}</h1>
 
-<a href="{% url 'polls:index' %}">¿Votar de nuevo?</a>
+            <ul>
+            {% for choice in question.choice_set.all %}
+                <li>{{ choice.choice_text }} -- {{choice.votes}} votos{{ hoice.votes|pluralize}}</li>
+            {% endfor %}
+            </ul>
+
+        {% else %}
+            <h2>Error: Para responder encuestas debe iniciar sesion.</h2>
+        {% endif %}
+
+        <p>Felicitaciones, has ganado {{ question.ValorMarket }} monedas.</p>
+        <p>En total tienes {{ valor_market_balance }} monedas para canjear por premios en nuestra tienda.</p>
+
+        <a href="{% url 'polls:index' %}">¿Votar de nuevo?</a>
+        <footer>
+            <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href=></a--></div>
+        </footer>
+    </body>
+</html>
