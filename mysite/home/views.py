@@ -52,3 +52,9 @@ def logout(request):
     auth_logout(request)
     return redirect('login')
 
+def tienda(request):
+    new_port='8080'
+    hostname = request.get_host().split(':')[0]
+    url = 'http://' + hostname + ':' + new_port + '/'
+    return redirect(url)
+
