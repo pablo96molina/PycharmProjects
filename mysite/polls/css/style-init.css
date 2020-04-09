@@ -1,0 +1,83 @@
+body {
+  background: white;
+}
+
+.top-margin {
+  margin: 22px 2px;
+  padding-right: 10px;
+}
+
+.contact-margin {
+  margin: 22px 10px;
+  padding-left: 2px;
+}
+
+.contact:hover {
+  text-decoration: none;
+}
+
+.welcome {
+  background: #000000;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 25;
+}
+.welcome h1 {
+  font-size: 50px;
+}
+
+.autent {
+  background: #f44336;
+  color: white;
+  padding: 20px;
+}
+
+.btns {
+  text-decoration: none;
+  color: white;
+}
+.btns:hover {
+  background: #ee827a;
+  color: #2a2726;
+  text-decoration: none;
+}
+
+.wrap {
+  background: #f1f1f1;
+  color: #000;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  margin: 20px 220px;
+  box-shadow: 0px 0px 3px grey;
+}
+
+.terms {
+  color: #5a8099;
+  padding: 20px 20px 10px 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 0;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+footer:hover {
+  background: #636363;
+  color: white;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=style-init.css.map */

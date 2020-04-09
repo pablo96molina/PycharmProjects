@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Encuestas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style >
+
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="img/logo_devuy.png" alt="Logo">
+                <div class="links">
+                    <ul class="nav">
+                         <li>
+                            <a href="home.html">Iniciar Sesión</a>
+                         </li>
+                         <li>
+                            <a href="tienda.html">La Tienda</a>
+                             <ul>
+                                <li><a href="Dev-uy.html">Mi Tienda</a>
+                                </li>
+                             </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Contacto</a>
+                          </li>
+                    </ul>
+                </div>
+             </div>
+        <nav>
+
+    <div class="form-content">
+        <div class="form">
+            {% if request.user.is_authenticated %}
+                <h1>{{ question.question_text }}</h1>
+
+                {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+            <form action="{% url 'polls:vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+                <div class="input-group radio">
+                    <input class="label" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+                {% endfor %}
+                </div>
+                <div class="input-group checkbox">
+                    <input type="checkbox" name="terminos" id="terminos" value="true">
+                    <label class="terms" for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div class="vote">
+                    <input type="submit" value="Votar">
+                </div>
+            </form>
+        </div>
+
+        {% else %}
+            <h2>Error: Para responder encuestas debe iniciar sesión.</h2>
+        {% endif %}
+        <p>Felicitaciones, has ganado {{ question.ValorMarket }} monedas.</p>
+        <p>En total tienes {{ valor_market_balance }} monedas para canjear por premios en nuestra tienda.</p>
+
+        <a href="{% url 'polls:index' %}">¿Votar de nuevo?</a>
+    </div>
+    <footer>
+        <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a--></div>
+    </footer>
+    </body>
+</html>
