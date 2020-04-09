@@ -1,193 +1,240 @@
-.generalContainer {
-     width: 90%;
-     max-width: 1000px;
-     margin: auto;
 
-     /*Flex*/
-     display: flex;
-     flex-flow: row wrap;
-}
+     body {
+         background: white;
+         width: 100%;
+         max-width: 1000px;
+         margin: 0 170px;
+         padding: 20px;
+         font-family: Arial, Helvetica, sans-serif;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+          // Flex
+         display: flex;
+         flex-flow: row wrap;
 
-/* Style the header */
-header {
-  background-color: #000000;
-  width: 100%;
-  padding: 20px;
-  margin: 0;
-  font-size: 40px;
-  color: #706f6f;
+     }
 
-  /*Flex*/
-  display: flex;
-  align-items: center;
+     /* Style the header */
 
-  flex-flow: row wrap;
-}
+      .logo2 {
+       background-color: #000000;
+       width: 100%;
+       padding: 20px;
+       font-size: 40px;
+       color: #706f6f;
 
-    li a {
-        font-size: 20px;
-        text-decoration: none;
-        color:;
+       /*Flex*/
+       display: flex;
+       align-items: center;
+
+       flex-flow: row wrap;
+     }
+
+     .logo2 h1 {
+         letter-spacing: 10px;
+
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+
+     nav {
+         width: 900px;
+         padding: 20px;
+
+     }
+
+
+     .logo {
+         margin: 20px 19px;
+         padding: 5px;
+         background-color: white;
+         width: 100%;
+         height: 100px;
+         align-items: center;
+
+
+         /*Flex*/
+         display: flex;
+         flex-flow: row nowrap;
+
+     }
+
+     .logo img {
+         width: 100px;
+         padding-left: 2px;
+         position: relative;
+     }
+
+
+     ul> li {
+        float: left;
+            /*background-color: #f44336;
+            color: white;*/
 
     }
 
-         /* Style the navigation menu */
+    .links {
+        background-color: #000000;
+        padding: 20px;
+        width: 900px;
+        height: 82px;
+        align-items: flex-end;
+    }
 
-    nav {
+    .links a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+
+    }
+
+    ul, ol {
+        list-style: none;
+
+   }
+
+    .question_text {
+        text-decoration: none;
+        color: black;
+    }
+
+   nav> ul> li:hover> ul {
+        display: block;
+        height: 100%;
+   }
+
+    nav li a:hover {
+        background: #ee827a;
+        color: #2a2726;
+    }
+
+    .form-content {
+        color: #000;
+        background: white;
+        width: 100%;
+        max-width: 1000px;
+        padding: 50px
+    }
+
+    .form h1 {
+        font-size: 26px;
+        color: #706f6f;
+        margin-bottom: 20px;
+        margin-left: 20px;
+
+    }
+
+    .form {
+        width: 100%;
+        margin: auto;
+        background: #f1f1f1;
+        width: 90%;
+        max-width: 500px;
+        padding: 40px;
+        margin: auto;
+        box-shadow: 0px 0px 3px grey;
+    }
+
+    form {
+
+    }
+    .input-group {
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+     .radio {
+        padding: 20px;
+        border-bottom: 1px solid #706f6f;
+    }
+
+    .radio input[type="radio"] {
+        display: none;
+    }
+
+    .radio label {
+        color: #706f6f;
+        padding: 5px 15px 5px 51px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .radio label:hover {
+        background: #b3b3b3;
+        color: white;
+    }
+
+    .radio label:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #706f6f;
+        border-radius: 50%;
+        position: absolute;
+        left: 17px;
+        top: 4px;
+    }
+
+    .radio input[type="radio"]:checked + label {
+        padding: 5px 15px;
+        background-color: #706f6f;
+        border-radius: 2px;
+        color: white;
+    }
+
+    .radio input[type="radio"]:checked + label::before {
+        display: none;
+    }
+
+    .terms {
+        color: #5a8099;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .vote {
+        padding-bottom: 20px;
+    }
+
+    .nav2, .nav2> ul> li> ul> li> a {
         background: #f44336;
         width: 100%;
-        margin: 0;
-
-
     }
 
-
-     ul, ol {
-         list-style: none;
-     }
-
-
-     nav> ul> li {
-         float: left;
-
-     }
-
-     nav> ul {
-         display: table;
-         overflow: hidden;
-         width: 100%;
-         position: relative;
-
-     }
-
-     nav> ul>li {
-         display: table-cell;
-     }
-
-      nav li a {
-         background: #f44336;
-         color: white;
-         text-decoration: none;
-         align-items: flex-end;
-     }
-
-     nav> ul> li> ul {
-         display: none;
-     }
-
-     nav> ul> li a {
-         display: block;
-         line-height: 20px;
-         text-align: center;
-         padding: 20px;
-         position: relative;
-
-     }
-
-    nav> ul> li:hover> ul {
-         display: block;
-         height: 100%;
+    .nav2> ul> li> a, .nav2> ul> li> ul> li> a {
+        text-decoration: none;
+        color: white;
     }
-
-     nav li a:hover {
-         background-color: #ee827a;
-         color: #2a2726;
-     }
-
-
-
-      /* Style the footer */
-      footer {
-           width: 100%;
-           padding: 0;
-           color: #000;
-           background-color: #f1f1f1;
-
-            /*Flex*/
-
-           display: flex;
-           flex-flow: row wrap;
-           justify-content: space-around;
-       }
-
-/* Style the navigation menu */
-
-nav {
-   background: #f44336;
-   width: 100%;
-
-
-}
-
-
-ul, ol {
-    list-style: none;
-}
-
-
-nav> ul> li {
-    float: left;
-
-}
-
-nav> ul {
-    display: table;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-
-}
-
-nav> ul>li {
-    display: table-cell;
-}
-
- nav li a {
-    background: #f44336;
-    color: white;
-    text-decoration: none;
-    align-items: flex-end;
-}
-
-nav> ul> li> ul {
-    display: none;
-}
-
-nav> ul> li a {
-    display: block;
-    line-height: 20px;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-
-}
-
-nav> ul> li:hover> ul {
-    display: block;
-    height: 100%;
-}
-
-nav li a:hover {
-    background-color: #ee827a;
-    color: #2a2726;
-}
-
-
 
  /* Style the footer */
- footer {
-      width: 100%;
-      padding: 0;
-      color: #000;
-      background-color: #f1f1f1;
+     footer {
+          width: 100%;
+          padding: 0;
+          background-color: #000000;
+          color: white;
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          align-items: center;
+          font-weight: bolder;
+
 
        /*Flex*/
 
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
+  }
+
+    footer:hover {
+      background: #636363;
+      color: white;
+      font-weight: bolder;
   }

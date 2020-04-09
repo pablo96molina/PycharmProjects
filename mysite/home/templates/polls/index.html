@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-{% if latest_question_list.enabled_questions %}
-<p>Bienvenidos!</p>
-<ul>
-{% for question in latest_question_list.enabled_questions %}
-    <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
-{% if latest_question_list.disabled_questions %}
-<p>Preguntas ya votadas:</p>
-<ul>
-{% for question in latest_question_list.disabled_questions %}
-    <li>{{ question.question_text }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-{% if not latest_question_list.enabled_questions and not latest_question_list.disabled_questions %}
-    <p>No polls are available.</p>
-{% endif %}
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=”prefix.js”></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style >
+
+        * {  margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        </style>
+        <title>Inicio</title>
+    </head>
+    <body>
+            <div class="logo2">
+                <h1 style="text-align: center"><p><img src="img/logo_devuy.png" style="width: 150px" alt="Logo">
+                                 ¡Bienvenidos!
+                            </p></<h1>
+            </div>
+            <div class="form-content">
+                <div class="form">
+
+                    {% if latest_question_list.enabled_questions %}
+                    <ul>
+                    {% for question in latest_question_list.enabled_questions %}
+                        <li><a class=".question_text" href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if latest_question_list.disabled_questions %}
+                    <p>Preguntas ya votadas:</p>
+                    <ul>
+                    {% for question in latest_question_list.disabled_questions %}
+                        <li>{{ question.question_text }}</li>
+                    {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if not latest_question_list.enabled_questions and not latest_question_list.disabled_questions %}
+                        <p>No polls are available.</p>
+                    {% endif %}
+                    <!--Barra de Navegación-->
+                      <!--nav class="nav2">
+                          <ul class="nav-ul-ol">
+                              <li><a href="#">Menú</a>
+                                  <ul>
+                                      <li><a href="#" class="question1">La Tienda</a></li>
+                                      <li><a href="#" class="question2">Acerca de</a></li>
+                                      <li><a href="#" class="question3">Contacto</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="Dev-uy.html">Mi Tienda</a></li>
+                          </ul>
+                     </nav-->
+                </div>
+            </div>
+        <footer>
+            <div class="newsletter">Dev.uy <!--Insertar link de nuestro dominio a href=></a--></div>
+        </footer>
+    </body>
+</html>
