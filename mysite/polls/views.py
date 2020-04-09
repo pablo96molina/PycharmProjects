@@ -18,7 +18,7 @@ def vote(request, question_id):
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
-        return render(request, 'polls/detail.html', {
+        return render(request, 'encuestas/detail.html', {
             'question': question,
             'error_message': "No seleccionaste una opción"
         })
@@ -44,7 +44,7 @@ def vote(request, question_id):
 
 
 class IndexView(generic.ListView):
-    template_name = 'polls/index.html'
+    template_name = 'encuestas/index.html'
     context_object_name = 'latest_question_list'
     # Modelo generico sacado del tutorial de Django
 
@@ -59,12 +59,12 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = 'polls/detail.html'
+    template_name = 'encuestas/detail.html'
 
 
 class ResultsView(generic.DetailView):
     model = Question
-    template_name = 'polls/results.html'
+    template_name = 'encuestas/results.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
