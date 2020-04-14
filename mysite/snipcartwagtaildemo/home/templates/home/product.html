@@ -2,6 +2,12 @@
 {% extends "base.html" %}
 {% load wagtailimages_tags %}
 
+<script>
+function CanjearProducto(){
+alert("Canjeado");
+}
+</script>
+
 {% block content %}
     <div class="container grid-lg">
         <div class="columns">
@@ -40,6 +46,16 @@
                         {% endif %}
                     {% endfor %}
                 </p>
+                 <form>
+                     <input type="button" value="Canjear" onclick="CanjearProducto()"/>
+                 </form>
+
+                <form action="canjear.py">
+                    <input type=submit value="Canjear Py">
+
+                </form>
+
+
 
                 <button class="snipcart-add-item btn btn-primary"
                     data-item-name="{{ page.title }}"
@@ -48,11 +64,12 @@
                     data-item-price="{{ page.price }}"
                     data-item-description="{{ page.short_description}}"
                     data-item-image="{{ temp_image.url }}"
+                    <i class="icon icon-plus"></i>
                     {% for f in custom_fields %}
                         data-item-custom{{forloop.counter}}-name="{{f.name}}"
                         data-item-custom{{forloop.counter}}-options="{{f.options}}"
                     {% endfor %}>
-                    <i class="icon icon-plus"></i>
+
                     Add to cart
                 </button>
             </div>
