@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from snipcartwagtaildemo.home.models import canjear
+from snipcartwagtaildemo.home.views import canjear
 
 urlpatterns = [
     path('', views.login, name='login'),
@@ -9,4 +9,6 @@ urlpatterns = [
     path('logout/', views.logout, name='logout'),
     path('tienda/', views.tienda, name='tienda'),
     #path('/<int:id>/canjear', canjear)
+    path('<int:page_ptr_id>/canjear/', views.canjear, name=canjear),
+
 ]
