@@ -5,6 +5,8 @@ from django.contrib import admin
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
+from django.urls import path
+import home.views
 
 from search import views as search_views
 
@@ -15,6 +17,7 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
+    path('<int:page_ptr_id>/canjear/', home.views.canjear, name='canjear'),
 
 ]
 
