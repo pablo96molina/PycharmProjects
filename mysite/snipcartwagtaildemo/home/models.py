@@ -1,5 +1,5 @@
 from django.db import models
-
+#from django import HttpResponse
 from modelcluster.fields import ParentalKey
 from wagtail.core.models import Page, Orderable
 from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, InlinePanel
@@ -48,6 +48,7 @@ class Product(Page):
 
         return context
 
+
 class ProductCustomField(Orderable):
     product = ParentalKey(Product, on_delete=models.CASCADE, related_name='custom_fields')
     name = models.CharField(max_length=255)
@@ -61,6 +62,11 @@ class ProductCustomField(Orderable):
 
 from wagtail.contrib.settings.models import BaseSetting, register_setting
 
+
+def canjear(request, id):
+    precioproducto = price
+    monto = ("%s", price)
+    return HttpResponse(monto)
 
 @register_setting
 class SnipcartSettings(BaseSetting):
