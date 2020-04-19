@@ -9,6 +9,7 @@ from django.urls import path
 import home.views
 
 from search import views as search_views
+#Definimos las url de wagtail
 
 urlpatterns = [
     url(r'^django-admin/', admin.site.urls),
@@ -17,8 +18,12 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
 
     url(r'^search/$', search_views.search, name='search'),
+
+#Toma el id del producto para canjear
     path('<int:page_ptr_id>/canjear/', home.views.canjear, name='canjear'),
+#Toma el saldo del usuario para usarlo en canjear
     path('guardar/<int:id>/<int:saldo>/', home.views.guardar_saldo, name='guardar_saldo'),
+
     path('home/', home.views.home, name='home'),
 
 ]

@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from home.models import Product
 from django.urls import reverse
 
-
+#Canjear toma el id del producto del url
 
 def canjear(request, page_ptr_id):
     producto = get_object_or_404(Product, pk=page_ptr_id)

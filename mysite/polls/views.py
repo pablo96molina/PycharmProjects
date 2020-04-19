@@ -11,7 +11,7 @@ from home.models import UserProfile
 # def vote(request, question_id):
 #    return HttpResponse("You're voting on question %s." % question_id)
 
-
+#Tomamos el Id de la pregunta
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
@@ -23,6 +23,7 @@ def vote(request, question_id):
             'error_message': "No seleccionaste una opción"
         })
     else:
+        #Sumamos el voto a la pregunta seleccionada
         selected_choice.votes += 1
         selected_choice.Saldo += question.ValorMarket
         # Lo que hace esto es sumarle el valor del market a la columna de la respuesta, pero precisamos la forma de tener

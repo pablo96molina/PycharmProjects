@@ -7,6 +7,8 @@ from django.db import models
 
 from django.contrib.auth.models import User
 
+#Definimos las preguntas
+
 class Question(models.Model):
     completed_by = models.ManyToManyField(User, null=True, blank=True)
     question_text = models.CharField(max_length=200)
@@ -19,7 +21,7 @@ class Question(models.Model):
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
-
+#Definimos las respuestas que estarán asociadas a las preguntas
 class Choice(models.Model):
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
