@@ -18,6 +18,8 @@ urlpatterns = [
 
     url(r'^search/$', search_views.search, name='search'),
     path('<int:page_ptr_id>/canjear/', home.views.canjear, name='canjear'),
+    path('guardar/<int:id>/<int:saldo>/', home.views.guardar_saldo, name='guardar_saldo'),
+    path('home/', home.views.home, name='home'),
 
 ]
 

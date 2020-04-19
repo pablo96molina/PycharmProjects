@@ -11,6 +11,7 @@ urlpatterns = [
     path('signup/', views.signup, name='signup'),
     path('logout/', views.logout, name='logout'),
     path('tienda/', views.tienda, name='tienda'),
+    path('saldo/<int:id_user>/<int:saldo>/', views.saldo, name='saldo'),
     #path('/<int:id>/canjear', canjear)
     # path('<int:page_ptr_id>/canjear/', snipcartwagtaildemo.home.views.canjear, name='canjear'),
 

@@ -1,10 +1,12 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, redirect, render
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import logout as auth_logout
+from django.contrib.auth.models import User
 
+from home.models import UserProfile
 from home.forms import SignUpForm
 
 def login(request):
@@ -26,6 +28,11 @@ def login(request):
 
 def home(request):
     if request.user.is_authenticated:
+        user_profile, created = UserProfile.objects.get_or_create(
+            user_id=request.user.pk
+        )
+        request.session['saldo'] = user_profile.valor_market_balance
+        
         return render(request, 'polls/Dev-uy.html')
     else:
         return redirect('login')
@@ -53,8 +60,18 @@ def logout(request):
     return redirect('login')
 
 def tienda(request):
+    saldo = 1000
+    saldo_str = str(saldo)
+    user_id = request.user.id
+    id_str = str(user_id)
     new_port='8080'
     hostname = request.get_host().split(':')[0]
-    url = 'http://' + hostname + ':' + new_port + '/'
+    url = 'http://' + hostname + ':' + new_port + '/guardar/' + id_str + '/' + saldo_str + '/'
     return redirect(url)
 
+def saldo(request, id_user, saldo):
+    user = get_object_or_404(User, id=id_user)
+    auth_login(request, user)
+
+    #actualizar el saldo del usuario
+    return redirect('home')
