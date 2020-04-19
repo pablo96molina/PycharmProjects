@@ -1,12 +1,12 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.http import HttpResponse, HttpResponseRedirect
-import home.models
+from home.models import Product
 from django.urls import reverse
 
 
 
 def canjear(request, page_ptr_id):
-    producto = get_object_or_404(home.models.Product, pk=page_ptr_id)
+    producto = get_object_or_404(Product, pk=page_ptr_id)
 
     # Se resta el saldo del usuario
     """ user_profile, created = UserProfile.objects.get_or_create(

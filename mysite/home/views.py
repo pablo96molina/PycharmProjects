@@ -60,7 +60,8 @@ def logout(request):
     return redirect('login')
 
 def tienda(request):
-    saldo = 1000
+    userProf, created = UserProfile.objects.get_or_create(user_id=request.user.id)
+    saldo = userProf.valor_market_balance
     saldo_str = str(saldo)
     user_id = request.user.id
     id_str = str(user_id)
@@ -72,6 +73,8 @@ def tienda(request):
 def saldo(request, id_user, saldo):
     user = get_object_or_404(User, id=id_user)
     auth_login(request, user)
+    
+    userProf, created = UserProfile.objects.get_or_create(user_id=id_user)
+    userProf.valor_market_balance = saldo
 
-    #actualizar el saldo del usuario
     return redirect('home')
