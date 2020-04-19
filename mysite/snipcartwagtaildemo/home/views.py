@@ -15,14 +15,18 @@ def canjear(request, page_ptr_id):
     user_profile.valor_market_balance =- home.models.Product.price
     user_profile.save() """
 
-    saldoActual = request.session['saldo']
-    if (saldoActual >= 650):
-        saldoActual =- 650
-        request.session['saldo'] = saldoActual
-        #que te avise que se canjeo con exito
+    saldoActual = int(request.session['saldo'])
+    
+    if (saldoActual >= producto.price):
+        saldoActual = int(saldoActual - producto.price)
+
+        request.session['saldo'] = str(saldoActual)
+        request.session['canjeado'] = True
     else:
-        #que te avise que no tiene suficiente saldo
-        print()
+        request.session['canjeado'] = False
+        
+    request.session['alert'] = 0
+        
     
 
     new_port='8080'
@@ -43,6 +47,7 @@ def guardar_saldo(request, id, saldo):
     return redirect(url)
 
 def home(request):
+    request.session['alert'] = 1
     saldo = request.session['saldo']
     saldo_str = str(saldo)
     user_id = request.session['id']
@@ -51,4 +56,6 @@ def home(request):
     hostname = request.get_host().split(':')[0]
     url = 'http://' + hostname + ':' + new_port + '/saldo/' + id_str + '/' + saldo_str + '/'
     return redirect(url)
+
+
 

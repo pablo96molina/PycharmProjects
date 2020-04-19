@@ -62,6 +62,8 @@ def logout(request):
 def tienda(request):
     userProf, created = UserProfile.objects.get_or_create(user_id=request.user.id)
     saldo = userProf.valor_market_balance
+    #esto es para probar comprar cosas
+    #saldo = 1000
     saldo_str = str(saldo)
     user_id = request.user.id
     id_str = str(user_id)

@@ -46,20 +46,16 @@ alert("Canjeado");
                         {% endif %}
                     {% endfor %}
                 </p>
-                 <form>
-                     <a type="button" value="Canjear" href="canjear/">Canjear</a>
-                 </form>
 
-                <form action="canjear.py">
-                    <input type=submit value="Canjear Py">
-                </form>
+                <br>
+                 
+                <a type="button" class="btn btn-primary" value="Canjear" href="canjear/">Canjear</a>
                 
-                <div class="vote">
-                    <input type="submit" value="Votar">
-                </div>
+
+                
 
 
-                <button class="snipcart-add-item btn btn-primary"
+                <!-- <button class="snipcart-add-item btn btn-primary"
                     data-item-name="{{ page.title }}"
                     data-item-id="{{ page.sku }}"
                     data-item-url="{{ page.get_full_url }}"
@@ -72,7 +68,7 @@ alert("Canjeado");
                         data-item-custom{{forloop.counter}}-options="{{f.options}}"
                     {% endfor %}>
                     Add to cart
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
